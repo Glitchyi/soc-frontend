@@ -1,28 +1,26 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 
-
 import LinesOfCode from "./components/Linesofcode";
 import Stats from "./components/Stats";
 import Header from "./components/Header";
 
 function App() {
-
-  const [user,setUser] = useState({
+  const [user, setUser] = useState({
     name: "",
     avatar: "",
     email: "",
     github: "",
     contact: "",
-    acsesstoken: ""
+    acsesstoken: "",
   });
 
   const [stats, setStats] = useState({
-    repos:69,
-    prs:50,
-    contributors:12
-  })
-  
+    repos: 69,
+    prs: 50,
+    contributors: 12,
+  });
+
   return (
     <>
       <div
@@ -31,8 +29,8 @@ function App() {
       >
         <div className={"mx-10 mt-10"}>
           <Header
-          github={"Glitchyi"} //TODO
-          avatar={"https://avatars.githubusercontent.com/u/55801439?v=4"} //TODO
+            github={"Glitchyi"} //TODO
+            avatar={"https://avatars.githubusercontent.com/u/55801439?v=4"} //TODO
           />
           <LinesOfCode count={"23,520"} />
         </div>
@@ -57,9 +55,10 @@ function App() {
               "flex flex-col text-right text-7xl font-bold gap-10 underline underline-offset-[20px] justify-end"
             }
           >
-            <h1>About</h1>
-            <h1>Maintainers</h1>
-            <h1>Repositories</h1>
+            <a href="/about">About</a>
+            <a href="/guidelines">Guidelines</a>
+            <a href="/maintainers">Maintainers</a>
+            <a href="/repositories">Repositories</a>
           </div>
         </div>
       </div>
