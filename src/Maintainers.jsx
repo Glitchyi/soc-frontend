@@ -52,7 +52,7 @@ const Maintainers = () => {
 
   return (
     <div
-      className="bg-custom-gradient h-screen flex flex-col justify-between"
+      className=" h-screen flex flex-col justify-between"
       id="background"
     >
       <div className="mx-10 mt-10 gap-10 flex flex-col">

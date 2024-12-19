@@ -69,7 +69,7 @@ const Repositories = () => {
 
   return (
     <div
-      className="bg-custom-gradient min-h-screen flex flex-col justify-between"
+      className=" min-h-screen flex flex-col justify-between"
       id="background"
     >
       <div className="mx-10 mt-10 gap-10 flex flex-col">

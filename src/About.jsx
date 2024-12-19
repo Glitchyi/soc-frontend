@@ -3,12 +3,12 @@ import Header from "./components/Header";
 const About = () => {
   return (
     <div
-      className="bg-custom-gradient min-h-screen flex flex-col justify-between"
+      className=" min-h-screen flex flex-col justify-between"
       id="background"
     >
       <div className="mx-10 mt-10 gap-10 flex flex-col">
         <Header />
-        <h1 className="text-6xl underline underline-offset-4 font-bold text-darkpacha">
+        <h1 className="text-5xl underline underline-offset-4 font-bold text-darkpacha">
           About
         </h1>
         <div>
@@ -48,16 +48,7 @@ const About = () => {
             </p>
           </section>
 
-          {/* Timeline Section */}
-          <section className="mb-10 w-full">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              Timeline
-            </h2>
-            <div className="flex items-center justify-center ">
-            <img
-            src="/timeline.svg" className="w-3/4"/>
-            </div>
-          </section>
+
 
           {/* Resources Required Section */}
           <section className="mb-10">
@@ -96,7 +87,7 @@ const About = () => {
               <strong>Season Of Commits Fest 2024</strong> to positively impact
               the student community and encourage long-term participation in
               open-source development. We look forward to working together to
-              ensure the event's success.
+              ensure the event&apos;s success.
             </p>
           </section>
         </div>

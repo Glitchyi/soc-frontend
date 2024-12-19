@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <div
-        className={"bg-custom-gradient h-screen flex flex-col justify-between"}
+        className={"h-screen flex flex-col justify-between"}
         id={"background"}
       >
         <div className={"mx-10 mt-10"}>
@@ -52,7 +52,7 @@ function App() {
           </div>
           <div
             className={
-              "flex flex-col text-right text-7xl font-bold gap-10 underline underline-offset-[20px] justify-end"
+              "flex flex-col text-right text-5xl font-bold gap-6 underline underline-offset-[1  0px] justify-end"
             }
           >
             <a href="/about">About</a>
