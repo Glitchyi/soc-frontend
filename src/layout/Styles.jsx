@@ -30,7 +30,7 @@ const Styles = ({ children }) => {
   }, [vantaEffect])
 
   return (
-    <div ref={myRef} className='w-full h-full border'>
+    <div ref={myRef} className='w-full h-full overflow-hidden'>
       {children|| <></>}
     </div>
   )

@@ -3,8 +3,7 @@ import Header from "./components/Header";
 const About = () => {
   return (
     <div
-      className=" min-h-screen flex flex-col justify-between"
-      id="background"
+      className="flex flex-col justify-between"
     >
       <div className="mx-10 mt-10 gap-10 flex flex-col">
         <Header />

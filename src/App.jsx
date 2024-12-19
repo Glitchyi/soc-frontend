@@ -52,7 +52,7 @@ function App() {
           </div>
           <div
             className={
-              "flex flex-col text-right text-5xl font-bold gap-6 underline underline-offset-[1  0px] justify-end"
+              "flex flex-col text-right text-5xl font-bold gap-6 underline underline-offset-[10px] justify-end"
             }
           >
             <a href="/about">About</a>
