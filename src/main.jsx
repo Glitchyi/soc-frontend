@@ -9,6 +9,7 @@ import App from "./App";
 import Guidelines from "./Guidelines";
 import Maintainers from "./Maintainers";
 import Repositories from "./Repositories";
+import ComingSoon from "./ComingSoon";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/maintainers" element={<Maintainers />} />
           <Route path="/repositories" element={<Repositories />} />
           <Route path="/about" element={<About />} />
+          <Route path="/comingsoon" element={<ComingSoon />} />
         </Routes>
       </Router>
     </Styles>
