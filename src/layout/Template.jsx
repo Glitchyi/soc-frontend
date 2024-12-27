@@ -3,7 +3,7 @@ import FOG from 'vanta/dist/vanta.fog.min.js'
 import * as THREE from 'three'
 
 // eslint-disable-next-line react/prop-types
-const Styles = ({ children }) => {
+const Template = ({ children }) => {
   const [vantaEffect, setVantaEffect] = useState(null)
   const myRef = useRef(null)
 
@@ -30,10 +30,10 @@ const Styles = ({ children }) => {
   }, [vantaEffect])
 
   return (
-    <div ref={myRef} className='w-full h-full overflow-hidden'>
+    <div ref={myRef} className='w-screen min-h-screen overflow-clip'>
       {children|| <></>}
     </div>
   )
 }
 
-export default Styles
+export default Template

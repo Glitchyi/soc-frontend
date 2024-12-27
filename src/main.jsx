@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Styles from "./layout/styles";
+import Template from "./layout/Template";
 
 import "./index.css";
 import About from "./About";
@@ -12,7 +12,7 @@ import Repositories from "./Repositories";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Styles>
+    <Template>
       <Router>
         <Routes>
           <Route path="/" element={<App />} />
@@ -22,6 +22,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>
-    </Styles>
+    </Template>
   </StrictMode>
 );

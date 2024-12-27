@@ -62,22 +62,18 @@ const Repositories = () => {
       {
         link: "https://github.com/MITS-Dev-Team/CanteenApp"
       },
-      {
-        link: "https://github.com/qqqlab/madflight"
-      }
   ];
 
   return (
     <div
-      className=" min-h-screen flex flex-col justify-between"
-      id="background"
+      className=" flex flex-col justify-between"
     >
       <div className="mx-10 mt-10 gap-10 flex flex-col">
         <Header />
         <h1 className="text-6xl underline underline-offset-4 font-bold text-darkpacha">
           Repositories
         </h1>
-        <div className="px-10 py-5">
+        <div className="px-10 py-10">
           <div className="flex flex-col gap-8">
             {data.map((repos, index) => (
               <a key={index} href={repos.link} className=" underline underline-offset-4 text-3xl font-bold">
