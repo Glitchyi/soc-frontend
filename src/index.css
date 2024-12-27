@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,5 +32,6 @@
   font-style: italic;
 }
 *{
-  font-family: 'Product Sans';
+  font-family: 'Satoshi', sans-serif;
+  /* font-family: 'Product Sans'; */
 }
