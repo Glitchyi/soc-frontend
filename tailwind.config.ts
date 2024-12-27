@@ -12,10 +12,15 @@ export default {
       },
       colors: {
         darkpacha: "#0C2011",
+        lightgray: "#0C20118C",
       },
       backgroundImage: {
                 "custom-gradient": "linear-gradient(78deg, #52FF80 17.86%, #D2FFDE 48.6%, #52FF80 106.41%)",
       },
+     
+      animation: {
+        spinIn:'spin 1s ease-in-out reverse',
+      }
     },
   },
 } satisfies Config;
