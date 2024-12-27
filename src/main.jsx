@@ -16,12 +16,12 @@ createRoot(document.getElementById("root")).render(
     <Template>
       <Router>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/Disabled" element={<App />} />
           <Route path="/guidelines" element={<Guidelines />} />
           <Route path="/maintainers" element={<Maintainers />} />
           <Route path="/repositories" element={<Repositories />} />
           <Route path="/about" element={<About />} />
-          <Route path="/comingsoon" element={<ComingSoon />} />
+          <Route path="/" element={<ComingSoon />} />
         </Routes>
       </Router>
     </Template>
