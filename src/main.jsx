@@ -9,19 +9,19 @@ import App from "./App";
 import Guidelines from "./Guidelines";
 import Maintainers from "./Maintainers";
 import Repositories from "./Repositories";
-import ComingSoon from "./ComingSoon";
+// import ComingSoon from "./ComingSoon";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Template>
       <Router>
         <Routes>
-          <Route path="/Disabled" element={<App />} />
+          <Route path="/" element={<App />} />
           <Route path="/guidelines" element={<Guidelines />} />
           <Route path="/maintainers" element={<Maintainers />} />
           <Route path="/repositories" element={<Repositories />} />
           <Route path="/about" element={<About />} />
-          <Route path="/" element={<ComingSoon />} />
+          {/* <Route path="/" element={<ComingSoon />} /> */}
         </Routes>
       </Router>
     </Template>
