@@ -14,13 +14,24 @@ const tempPRs = [
     ghLink: "Glitchyi/spotpapers",
     status: "Open",
   },
+  {
+    id: 3,
+    prLink: "https://github.com/subsurface/libdc/pull/69",
+    ghLink: "Adrin7113/College_List",
+    status: "Merged",
+  },
+  {
+    id: 4,
+    prLink: "https://github.com/subsurface/libdc/pull/69",
+    ghLink: "Glitchyi/spotpapers",
+    status: "Open",
+  },
 ];
 
 const Pull_Requests = () => {
   return (
-    <div>
-      <h1 className="text-6xl font-bold mt-20 mb-10">Pull Requests</h1>
-      <div className="flex flex-col gap-10">
+    <div className="h-full">
+      <div className="flex flex-col gap-10 ">
         {tempPRs.map((repo) => (
           <Pull_Request_Item
             key={repo.id}

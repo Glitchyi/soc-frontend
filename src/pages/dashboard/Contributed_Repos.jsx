@@ -14,6 +14,18 @@ const tempRepos = [
     author: "Advaith Narayanan",
     authorImg: "https://avatars.githubusercontent.com/u/55801439?v=4",
   },
+  {
+    id: 3,
+    ghLink: "github.com/Adrin7113/College_List",
+    author: "Adrin Jose C T",
+    authorImg: "https://avatars.githubusercontent.com/u/112411286?v=4",
+  },
+  {
+    id: 4,
+    ghLink: "github.com/Glitchyi/spotpapers",
+    author: "Advaith Narayanan",
+    authorImg: "https://avatars.githubusercontent.com/u/55801439?v=4",
+  },
 ];
 
 const Contributed_Repos = (
@@ -21,8 +33,7 @@ const Contributed_Repos = (
 ) => {
   return (
     <div>
-      <h1 className="text-6xl font-bold mt-20 mb-10">Contributed Repos</h1>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 overflow-y-scroll">
         {tempRepos.map((repo) => (
           <Repository_Item
             key={repo.id}
