@@ -9,6 +9,7 @@ import App from "./App";
 import Guidelines from "./Guidelines";
 import Maintainers from "./Maintainers";
 import Repositories from "./Repositories";
+import Dashboard from "./pages/dashboard/Dashboard";
 // import ComingSoon from "./ComingSoon";
 
 createRoot(document.getElementById("root")).render(
@@ -21,6 +22,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/maintainers" element={<Maintainers />} />
           <Route path="/repositories" element={<Repositories />} />
           <Route path="/about" element={<About />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           {/* <Route path="/" element={<ComingSoon />} /> */}
         </Routes>
       </Router>
