@@ -10,13 +10,13 @@ export default function Header({ avatar = "", github = "" }) {
       </div>
       <div
         className={
-          "flex items-center gap-4 lg:gap-8 bg-green-100 border-2 border-black px-4 py-2 rounded-full"
+          "flex items-center gap-4 lg:gap-8 bg-green-100 border-2 border-black px-6 py-3 rounded-full"
         }
       >
         <h1 className={"text-xl lg:text-4xl font-bold"}>{github}</h1>
         <img
           src={avatar ? avatar : "/default_user.svg"}
-          className={"w-8 lg:w-16 rounded-full"} // Somethings off here. Gotta look into it. Default does not work for some reason
+          className={"w-8 lg:w-12 rounded-full"} // Somethings off here. Gotta look into it. Default does not work for some reason
         />
       </div>
     </div>
