@@ -4,6 +4,7 @@ import { useState } from "react";
 import LinesOfCode from "./components/Linesofcode";
 import Stats from "./components/Stats";
 import Header from "./components/Header";
+import { Link } from "react-router-dom";
 
 function App() {
   const [user, setUser] = useState({
@@ -37,13 +38,14 @@ function App() {
 
         <div className={"px-10 mb-10 flex justify-between items-end"}>
           <div className={"flex flex-col gap-10"}>
-            <button
+            <a
+              href="/sign_up"
               className={
                 "flex gap-16 items-center w-fit rounded-full p-5 px-10 bg-darkpacha text-4xl font-bold text-white "
               }
             >
               Start Contributing <img src="git-compare.svg" width={48} />
-            </button>
+            </a>
             <Stats
               repos={stats.repos}
               prs={stats.prs}

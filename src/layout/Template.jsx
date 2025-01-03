@@ -1,39 +1,41 @@
-import { useState, useEffect, useRef } from 'react'
-import FOG from 'vanta/dist/vanta.fog.min.js'
-import * as THREE from 'three'
+import { useState, useEffect, useRef } from "react";
+import FOG from "vanta/dist/vanta.fog.min.js";
+import * as THREE from "three";
 
 // eslint-disable-next-line react/prop-types
 const Template = ({ children }) => {
-  const [vantaEffect, setVantaEffect] = useState(null)
-  const myRef = useRef(null)
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const myRef = useRef(null);
 
   useEffect(() => {
     if (!vantaEffect) {
-      setVantaEffect(FOG({
-        el: myRef.current,
-        THREE: THREE,
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        highlightColor: 0x2d902,
-        midtoneColor: 0x66ff4e,
-        lowlightColor: 0xeb7c,
-        baseColor: 0xffffff,
-        zoom: 0.10
-      }))
+      setVantaEffect(
+        FOG({
+          el: myRef.current,
+          THREE: THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          highlightColor: 0x2d902,
+          midtoneColor: 0x66ff4e,
+          lowlightColor: 0xeb7c,
+          baseColor: 0xffffff,
+          zoom: 0.1,
+        })
+      );
     }
     return () => {
-      if (vantaEffect) vantaEffect.destroy()
-    }
-  }, [vantaEffect])
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
 
   return (
-    <div ref={myRef} className='w-screen min-h-screen overflow-clip'>
-      {children|| <></>}
+    <div ref={myRef} className="w-screen min-h-screen overflow-clip">
+      {children || <></>}
     </div>
-  )
-}
+  );
+};
 
-export default Template
+export default Template;
