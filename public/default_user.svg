@@ -2,8 +2,8 @@
     <rect width="64" height="64" rx="32" fill="white" />
     <path
         d="M39 41V39C39 37.9391 38.5786 36.9217 37.8284 36.1716C37.0783 35.4214 36.0609 35 35 35H29C27.9391 35 26.9217 35.4214 26.1716 36.1716C25.4214 36.9217 25 37.9391 25 39V41"
-        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        stroke="black" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" />
     <path
         d="M32 31C34.2091 31 36 29.2091 36 27C36 24.7909 34.2091 23 32 23C29.7909 23 28 24.7909 28 27C28 29.2091 29.7909 31 32 31Z"
-        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        stroke="black" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" />
 </svg

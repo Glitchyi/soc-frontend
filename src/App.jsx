@@ -38,14 +38,14 @@ function App() {
 
         <div className={"px-10 mb-10 flex justify-between items-end"}>
           <div className={"flex flex-col gap-10"}>
-            <Link
-              to="/signup"
+            <a
+              href="/signup"
               className={
                 "flex gap-16 items-center w-fit rounded-full p-5 px-10 bg-darkpacha text-4xl font-bold text-white "
               }
             >
               Start Contributing <img src="git-compare.svg" width={48} />
-            </Link>
+            </a>
             <Stats
               repos={stats.repos}
               prs={stats.prs}
