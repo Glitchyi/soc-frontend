@@ -13,8 +13,6 @@ const Finish = () => {
         
         <div className="w-1/2 h-[80%] border-r-2 border-black/60 flex flex-col items-center justify-center gap-2">
           <h1 className="text-6xl font-bold" >Complete your profile,</h1>
-        
-          
         </div>
 
         {/* Guidelines Section */}

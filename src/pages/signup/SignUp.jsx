@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 
+
 const Sign_Up = () => {
   return (
     <div className="p-12 h-screen">
@@ -10,13 +11,13 @@ const Sign_Up = () => {
 
       <div className=" h-full flex items-center">
         <div className="w-1/2 h-[80%] border-r-2 border-black/60 flex flex-col items-center justify-center gap-2">
+        
+        <a href={`https://github.com/login/oauth/authorize/?client_id=${import.meta.env.VITE_CLIENT_ID}&redirect_uri=${import.meta.env.VITE_REDIRECT_URI}&scope=repo,user`}>
           <button className="font-bold text-2xl text-white bg-black py-4 px-6 rounded-full hover:scale-105 transition-all ease-in-out flex items-center gap-5">
             Register with Github
             <img src="/github.svg" alt="" />
           </button>
-          <span className="font-semibold">
-            or <span className="underline cursor-pointer ">sign back in</span>
-          </span>
+          </a>
         </div>
         <div className="w-1/2 h-[80%]">
           <div className="flex flex-col gap-8 [&>p]:text-xl pl-16 pt-10">
