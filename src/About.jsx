@@ -1,12 +1,10 @@
-import Header from "./components/Header";
-
 const About = () => {
   return (
     <div
       className="flex flex-col justify-between"
     >
       <div className="mx-10 mt-10 gap-10 flex flex-col">
-        <Header />
+        
         <h1 className="text-5xl underline underline-offset-4 font-bold text-darkpacha">
           About
         </h1>

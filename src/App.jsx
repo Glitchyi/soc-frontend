@@ -3,7 +3,6 @@ import { useState } from "react";
 
 import LinesOfCode from "./components/Linesofcode";
 import Stats from "./components/Stats";
-import Header from "./components/Header";
 import { Link } from "react-router-dom";
 
 function App() {
@@ -24,19 +23,10 @@ function App() {
 
   return (
     <>
-      <div
-        className={"h-screen flex flex-col justify-between"}
-        id={"background"}
-      >
-        <div className={"mx-10 mt-10"}>
-          <Header
-            github={"Glitchyi"} //TODO
-            avatar={"https://avatars.githubusercontent.com/u/55801439?v=4"} //TODO
-          />
-          <LinesOfCode count={"23,520"} />
-        </div>
 
-        <div className={"px-10 mb-10 flex justify-between items-end"}>
+        <LinesOfCode count={"23,520"}/>
+
+        <div className={"px-10 mb-10 flex justify-between items-end absolute bottom-0 w-full"}> 
           <div className={"flex flex-col gap-10"}>
             <Link
               to="/signup"
@@ -63,7 +53,7 @@ function App() {
             <a href="/repositories">Repositories</a>
           </div>
         </div>
-      </div>
+      
     </>
   );
 }

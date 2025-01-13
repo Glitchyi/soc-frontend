@@ -1,16 +1,9 @@
-import Header from "../../components/Header";
-
 
 const Sign_Up = () => {
   return (
-    <div className="p-12 h-screen">
-      <Header
-        github={"Glitchyi"} //TODO
-        avatar={"https://avatars.githubusercontent.com/u/55801439?v=4"} //TODO
-      />
-
-      <div className=" h-full flex items-center">
-        <div className="w-1/2 h-[80%] border-r-2 border-black/60 flex flex-col items-center justify-center gap-2">
+    <div className="p-12  h-full">
+      <div className=" flex items-center">
+        <div className="w-1/2 h-full  flex flex-col items-center justify-center gap-2">
         
         <a href={`https://github.com/login/oauth/authorize/?client_id=${import.meta.env.VITE_GITHUB_CLIENT_ID}&redirect_uri=${import.meta.env.VITE_GITHUB_REDIRECT}`}>
           <button className="font-bold text-2xl text-white bg-black py-4 px-6 rounded-full hover:scale-105 transition-all ease-in-out flex items-center gap-5">
@@ -19,6 +12,7 @@ const Sign_Up = () => {
           </button>
           </a>
         </div>
+        <div className="h-[600px] w-[2px] bg-black/60" />
         <div className="w-1/2 h-[80%]">
           <div className="flex flex-col gap-8 [&>p]:text-xl pl-16 pt-10">
             <h1 className="text-6xl font-bold underline" >Guidelines</h1>

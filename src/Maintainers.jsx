@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+
 import MaintainerTag from "./components/MaintainerTag";
 
 const Maintainers = () => {
@@ -53,7 +53,7 @@ const Maintainers = () => {
   return (
     <div className=" h-screen flex flex-col justify-between" id="background">
       <div className="mx-10 mt-10 gap-10 flex flex-col">
-        <Header />
+
         <h1 className="text-6xl underline underline-offset-4 font-bold text-darkpacha">
           Maintainers
         </h1>

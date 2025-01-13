@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import FOG from "vanta/dist/vanta.fog.min.js";
 import * as THREE from "three";
+import Header from "../components/Header";
 
 // eslint-disable-next-line react/prop-types
 const Template = ({ children }) => {
@@ -33,6 +34,9 @@ const Template = ({ children }) => {
 
   return (
     <div ref={myRef} className="w-screen min-h-screen overflow-clip">
+      <div className="mx-10 pt-10">
+        <Header avatar="" github=""/>
+      </div>
       {children || <></>}
     </div>
   );

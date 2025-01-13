@@ -1,6 +1,3 @@
-
-import Header from "../../components/Header";
-
 const Finish = () => {
   const url = new URL(window.location.href);
   const params = new URLSearchParams(url.search);
@@ -9,19 +6,43 @@ const Finish = () => {
   const avatar = params.get('avatar_url');
   const html_url = params.get('html_url');
 
+  // Save variables to local storage under a user class
+  const user = {
+    login: login,
+    id: id,
+    avatar: avatar,
+    html_url: html_url
+  };
+
+  const saveuser = () =>{
+    localStorage.setItem('user', JSON.stringify(user));
+  }
+
 
   return (
     <div className="p-12 h-screen">
-      <Header
-        github={login} //TODO
-        avatar={avatar} //TODO
-      />
 
       <div className=" h-full flex items-center">
 
         
         <div className="w-1/2 h-[80%] border-r-2 border-black/60 flex flex-col items-center justify-center gap-2">
-          <h1 className="text-6xl font-bold" >Complete your profile, </h1>
+        <div className="flex flex-col items-center gap-5">
+          <h1 className="text-4xl font-bold" >Complete your profile, </h1>
+          <div className="flex gap-2 items-center w-full">
+            <img src={avatar} alt="" className="rounded-full w-12"/>
+            <p className="text-4xl font-bold">{login}</p>
+          </div>
+          <div className="[&>input]:w-full [&>input]:rounded-lg [&>input]:h-16 [&>input]:shadow-lg [&>input]:px-5 [&>input]:text-xl [&>input]:border-2 [&>input]:border-black w-full flex flex-col items-start [&>input]:mt-2 [&>input]:mb-5 [&>label]:font-bold">
+            <label htmlFor="name">NAME</label>
+            <input name="name" type="text" placeholder="Advaith Naryanan" />
+            <label htmlFor="number">Contact</label>
+            <input name="number" type="tel" />
+            <label htmlFor="number">College Mail</label>
+            <input name="email" type="email" />
+          <button className="font-bold text-xl text-white bg-black pl-8 pr-20 py-3 rounded-full">Submit</button>
+          </div>
+        </div>
+          
         </div>
 
         {/* Guidelines Section */}

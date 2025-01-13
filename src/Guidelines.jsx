@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 
 const Guidelines = () => {
   return (
@@ -7,7 +6,7 @@ const Guidelines = () => {
       id="background"
     >
       <div className="mx-10 mt-10 gap-10 flex flex-col">
-        <Header />
+
         <h1 className="text-6xl underline underline-offset-4 font-bold text-darkpacha">
           Guidelines
         </h1>
