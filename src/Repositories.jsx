@@ -27,9 +27,6 @@ const Repositories = () => {
       link: "https://github.com/parzi-al/mcscanner"
     },
     {
-      link: "https://github.com/parzi-al/miniproject"
-    },
-    {
       link: "https://github.com/Xrg360/MITS_Report_Latex"
     },
     {
