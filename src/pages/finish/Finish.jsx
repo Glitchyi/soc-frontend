@@ -1,18 +1,27 @@
+
 import Header from "../../components/Header";
 
 const Finish = () => {
+  const url = new URL(window.location.href);
+  const params = new URLSearchParams(url.search);
+  const login = params.get('login');
+  const id = params.get('id');
+  const avatar = params.get('avatar_url');
+  const html_url = params.get('html_url');
+
+
   return (
     <div className="p-12 h-screen">
       <Header
-        github={"Glitchyi"} //TODO
-        avatar={"https://avatars.githubusercontent.com/u/55801439?v=4"} //TODO
+        github={login} //TODO
+        avatar={avatar} //TODO
       />
 
       <div className=" h-full flex items-center">
 
         
         <div className="w-1/2 h-[80%] border-r-2 border-black/60 flex flex-col items-center justify-center gap-2">
-          <h1 className="text-6xl font-bold" >Complete your profile,</h1>
+          <h1 className="text-6xl font-bold" >Complete your profile, </h1>
         </div>
 
         {/* Guidelines Section */}
