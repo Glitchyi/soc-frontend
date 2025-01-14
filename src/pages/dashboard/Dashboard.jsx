@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <div className="p-12 h-screen">
       <div className="w-full h-[95%] flex flex-col lg:flex-row">
-        <div className="w-full h-1/2 lg:w-1/2 lg:h-[85%] overflow-hidden">
+        <div className="w-full lg:w-1/2 lg:h-[85%] overflow-hidden">
           <h1 className="text-4xl lg:text-6xl font-bold mt-10 lg:mt-20 mb-5 lg:mb-10">
             Contributed Repos
           </h1>

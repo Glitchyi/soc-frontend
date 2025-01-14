@@ -6,15 +6,7 @@ import Stats from "./components/Stats";
 import { Link } from "react-router-dom";
 
 function App() {
-  const [user, setUser] = useState({
-    name: "",
-    avatar: "",
-    email: "",
-    github: "",
-    contact: "",
-    acsesstoken: "",
-  });
-
+  const user = localStorage.getItem("user")
   const [stats, setStats] = useState({
     repos: 69,
     prs: 50,
@@ -29,7 +21,7 @@ function App() {
         <div className={"px-10 mb-10 flex justify-between items-end absolute bottom-0 w-full"}> 
           <div className={"flex flex-col gap-10"}>
             <Link
-              to="/signup"
+              to={user ? "/dashboard": "/signup"}
               className={
                 "flex gap-16 items-center w-fit rounded-full p-5 px-10 bg-darkpacha text-4xl font-bold text-white "
               }
